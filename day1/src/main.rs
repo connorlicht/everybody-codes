@@ -14,7 +14,7 @@ fn main() {
     total = 0;
 
     for value in values {
-        let side = ((value - 4) as f64 / 4.0).ceil() as i32;
+        let side = (value - 4 - 1) / 4 + 1;
         let mut perimeter = (side + 2) * 2 + ((side) * 2);
 
         if perimeter < 8 {
